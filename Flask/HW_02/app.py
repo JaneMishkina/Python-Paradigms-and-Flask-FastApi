@@ -29,7 +29,7 @@ def auth():
         response.set_cookie('username', username)
         response.set_cookie('email', email)
         return response
-    response = make_response(render_template('registration.html', **context))
+    response = make_response(render_template('authorization.html', **context))
     return response
 
 
